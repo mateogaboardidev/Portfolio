@@ -17,12 +17,11 @@ export const ContactSectionContent = styled("div", {
   },
 });
 
-export const ContactSectionText = styled("aside", {
+export const ContactSectionText = styled("div", {
   maxWidth: "26.25rem",
   display: "grid",
   gridGap: "$2",
   height: "max-content",
-  position: "sticky",
   top: "8rem",
   "@mobile": {
     position: "static",

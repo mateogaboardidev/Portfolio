@@ -22,13 +22,12 @@ export const Contacts = () => {
   const linkedInUrl = `https://www.linkedin.com/in/${userData.linkedinUser}`;
 
   const { scrollYProgress } = useViewportScroll();
-  const scale = useTransform(scrollYProgress, [0, 1], [0.1, 0.9]);
 
   return (
     <ContactSection id="contact">
       <Container>
         <ContactSectionContent ref={ref}>
-          <motion.div style={{ scale }}>
+          <motion.div>
             <ContactSectionText>
               <Text type="heading2" color="grey4">
                 Vamos conversar e{" "}
