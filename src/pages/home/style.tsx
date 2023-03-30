@@ -9,13 +9,13 @@ import backgroundImg from "@/public/static/img/background/header-bg.svg";
 import dots from "@/public/static/img/background/dots.svg";
 
 export const Header = styled("header", {
-  backgroundColor: "$grey1",
+  backgroundColor: "$brown1",
   padding: "12rem 0 8rem 0",
   backgroundImage: `url(${backgroundImg})`,
   backgroundRepeat: "no-repeat",
   backgroundPosition: "right",
   backgroundAttachment: "fixed",
-  borderBottom: "2px solid $grey5",
+  borderBottom: "2px solid $beige1",
   "@tablet": {
     backgroundPosition: "right -10% center",
   },
@@ -107,6 +107,7 @@ export const ProjectsArea = styled("section", {
   backgroundImage: `url(${dots})`,
   backgroundRepeat: "no-repeat",
   backgroundPosition: "left top 11rem",
+  borderBottom: "2px solid $beige1",
   "@tablet": {
     backgroundPosition: "right top 8rem",
     padding: "$sectionMobile 0",

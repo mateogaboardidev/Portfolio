@@ -24,15 +24,16 @@ export const Button = styled("button", {
       btLink: {
         background: "transparent",
         borderColor: "transparent",
-        fontWeight: "500",
+        fontWeight: "600",
       },
       primary: {
-        background: "$brand1",
-        borderColor: "$brand1",
+        background: "$blue1",
+        borderColor: "$blue1",
         color: "$whiteFixed",
+        transition: "0.4s",
         "&:hover": {
-          backgroundColor: "$brand2",
-          borderColor: "$brand2",
+          backgroundColor: "$blue2",
+          borderColor: "$blue2",
         },
         "@mobile": {
           height: "2.5rem",
@@ -41,12 +42,13 @@ export const Button = styled("button", {
         },
       },
       outline: {
-        borderColor: "$grey4",
-        color: "$grey4",
+        borderColor: "$beige1",
+        color: "$beige1",
         backgroundColor: "transparent",
+        transition: "0.4s",
 
         "&:hover": {
-          backgroundColor: "$grey4",
+          backgroundColor: "$beige1",
           color: "$grey1",
         },
       },
@@ -102,7 +104,7 @@ export const Button = styled("button", {
         },
       },
       circle: {
-        borderColor: "$grey5",
+        borderColor: "$beige1",
         backgroundColor: "transparent",
         borderRadius: "50%",
         padding: "0",
@@ -110,6 +112,7 @@ export const Button = styled("button", {
         height: "2.75rem",
         minWidth: "2.75rem",
         minHeight: "2.75rem",
+        transition: "0.4s",
         ["& + a"]: {
           marginLeft: "$2",
         },
@@ -144,7 +147,7 @@ export const Button = styled("button", {
           },
         },
         "&:hover": {
-          backgroundColor: "$grey5",
+          backgroundColor: "$beige1",
         },
         "@mobile": {
           width: "5rem",

@@ -21,7 +21,6 @@ export interface MenuButtonOpen {
 }
 
 export const NavBar = (): JSX.Element => {
-
   const isWide = useMedia({ maxWidth: "991px" });
 
   document.title = userData.nameUser;
@@ -49,9 +48,7 @@ export const NavBar = (): JSX.Element => {
             </Button>
           )}
         </NavbarMobileArea>
-        <Flex>
-          {isWide ? open && <NavLinks /> : <NavLinks />}
-        </Flex>
+        <Flex>{isWide ? open && <NavLinks /> : <NavLinks />}</Flex>
       </Container>
     </NavbarWrapper>
   );
@@ -60,17 +57,20 @@ export const NavBar = (): JSX.Element => {
 export const NavLinks = (): JSX.Element => {
   return (
     <NavbarLinks>
-      <Button type="btLink" as="a" color="grey4" href={`#home`}>
-        Home
+      <Button type="btLink" as="a" color="beige1" href={`#home`}>
+        Início
       </Button>
-      <Button type="btLink" as="a" color="grey4" href={`#projects`}>
-        Projects
+      <Button type="btLink" as="a" color="beige1" href={`#projects`}>
+        Projetos
       </Button>
-      <Button type="btLink" as="a" color="grey4" href={`#contact`}>
-        Contact
+      <Button type="btLink" as="a" color="beige1" href={`#contact`}>
+        Contato
       </Button>
-      <Button type="btLink" as="a" color="grey4" href={`#social-media`}>
-        Social Media
+      <Button type="btLink" as="a" color="beige1" href={`#about-me`}>
+        Sobre Mim
+      </Button>
+      <Button type="btLink" as="a" color="beige1" href={`#social-media`}>
+        Redes Sociais
       </Button>
     </NavbarLinks>
   );

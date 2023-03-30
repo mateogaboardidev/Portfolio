@@ -26,6 +26,7 @@ import {
   ProjectAreaWrapperColumns,
   ProjectsAreaContent,
 } from "./style";
+import { AboutMe } from "@/components/AboutMe";
 
 export const Home = (): JSX.Element => {
   const gihubUrl = `https://github.com/${userData.githubUser}`;
@@ -44,34 +45,34 @@ export const Home = (): JSX.Element => {
                 width={"48px"}
                 height={"48px"}
               />
-              <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
+              <Text color="beige1">Olá, meu nome é {userData.nameUser}</Text>
             </Flex>
             <Text as="h1" type="heading1" color="grey5">
-            I{" "}
-              <Text as="span" type="heading1" color="brand1">
-                love
+              Eu{" "}
+              <Text as="span" type="heading1" color="blue1">
+                adoro
               </Text>{" "}
-              creating and{" "}
-              <Text as="span" type="heading1" color="brand1">
-                developing
+              criar e{" "}
+              <Text as="span" type="heading1" color="blue1">
+                desenvolver
               </Text>{" "}
-              projects
+              projetos
             </Text>
             <Text type="body1" color="grey2">
-              Discover here in this environment, created especially for you, all
-              my projects and technologies
+              De uma olhada por meio deste portfólio, tecnologias conhecidas e
+              projetos desenvolvidos por mim!
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
-                See Projects
+                Ver Projetos
               </Button>
               <Button as="a" type="outline" target="_blank" href={portfolioUrl}>
                 See my portfolio source code
               </Button>
               <Button
-                color="grey5"
+                color="beige1"
                 as="a"
-                css={{ "&:hover": { color: "$grey1" } }}
+                css={{ "&:hover": { color: "$brown1" } }}
                 type="circle"
                 target="_blank"
                 href={gihubUrl}
@@ -91,13 +92,13 @@ export const Home = (): JSX.Element => {
         <Container>
           <ProjectAreaWrapperColumns>
             <ProjectsAreaSocialMediaMessage>
-              <Text as="h2" type="heading4" color="grey4">
-                My projects
+              <Text as="h2" type="heading4" color="beige1">
+                Meus projetos
               </Text>
               <Text as="p" type="body1" color="grey2">
-                Some of my{" "}
-                <Text as="span" color="brand5">
-                  side projects
+                Alguns dos meus{" "}
+                <Text as="span" color="beige1">
+                  projetos
                 </Text>
               </Text>
             </ProjectsAreaSocialMediaMessage>
@@ -108,6 +109,7 @@ export const Home = (): JSX.Element => {
         </Container>
       </ProjectsArea>
       <Contacts />
+      <AboutMe />
     </main>
   );
 };
