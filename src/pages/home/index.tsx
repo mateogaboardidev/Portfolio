@@ -67,7 +67,7 @@ export const Home = (): JSX.Element => {
                 Ver Projetos
               </Button>
               <Button as="a" type="outline" target="_blank" href={portfolioUrl}>
-                See my portfolio source code
+                Veja o código desse portfólio
               </Button>
               <Button
                 color="beige1"
